@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Control</title>
+  <link rel="stylesheet" href="./Style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.3/socket.io.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <head>
+        <h1 class="nameTile">HOME CONTROL</h1>
+    </head>
+
+        <!--Create block to display sensor-parameters-->
+    <div class="sensor_Parameters">
+        <!--create temperature-->
+        <div id="temperature" style="background-image: linear-gradient(to right, rgb(205, 68, 96), rgb(207, 185, 185));">
+            <h3><i class="fa-solid fa-temperature-three-quarters" style="color: rgb(173, 62, 62);  margin-top: 4px"></i> Nhiệt độ</h3>
+            <h3 id="temperature1">℃</h3>
+        </div>
+
+        <!--Create Humidity-->
+        <div id="humidity" style="background-image: linear-gradient(to right,  rgb(92, 92, 206), rgb(166, 182, 208));">
+            <h3><i class="fa-solid fa-cloud-moon-rain" style="color: rgb(42, 42, 180); margin-top: 4px;"></i> Độ ẩm</h3>
+            <h3 id="humidity1"> %</h3>
+        </div>
+
+        <!--Create Gas properties-->
+        <div id="gas" style="background-image: linear-gradient(to right, rgb(161, 206, 64), rgb(144, 214, 108));">
+            <h3><i class="fa-solid fa-fire-flame-curved" style="color: rgb(198, 41, 96); margin-top: 4px"></i> Gas</h3>
+            <h3 id="gas1"> ppm</h3>
+        </div>
+        <!--Create Smoke properties-->
+        <div id="smoke" style="background-image: linear-gradient(to right, rgb(163, 172, 146), rgb(218, 216, 191));">
+            <h3><i class="fa-solid fa-water" style="color: rgb(244, 242, 241); margin-top: 4px"></i> Smoke</h3>
+            <h3 id="smoke1"> ppm</h3>
+        </div>
+    </div>
+
+    <div class="control_Mode">
+            <!--Create table to display Chart-->
+        <div class="sensor_chart">
+            <canvas id="chart"></canvas>
+        </div>
+    </div>
+</div>
+
+  <script src="custom.js"></script>
+</body>
+
+</html>

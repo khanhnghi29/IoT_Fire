@@ -1,0 +1,57 @@
+* {
+    margin : 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container {
+    background-image: url(../Imgs/back4.jpg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+        /*design header*/
+.nameTile {
+    background-color: rgba(107, 175, 184, 0.5);
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 10px auto;
+    text-align: center;
+    width: 70vw;
+    height: 10vh;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+/* Design nav-parameter_sensors */
+.sensor_Parameters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 55vw;
+    height: 9vh;
+    margin: 15px auto 0 auto;
+}
+#temperature, #humidity, #gas, #smoke {
+    text-align: center;
+    width: 10vw;
+    height: 100%;
+    /* background-color: aqua; */
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+#temperature1, #humidity1, #gas1, #smoke1 {
+    margin-top: 8px;
+}
+
+.sensor_chart {
+    width: 63vw;
+    height:72vh;
+    margin: 20px auto;
+    /* background-color: aquamarine; */
+    border: 1px solid;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+ }
